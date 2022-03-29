@@ -1,8 +1,7 @@
 #check if a string is a palindrome or not
 def checkString(string):
-    string.lower()
     newstr = string[::-1]
-    if newstr == string:
+    if newstr.lower() == string.lower():
         print("The string is palindrome")
     else:
         print("The string is not palindrome")
